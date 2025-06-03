@@ -64,6 +64,27 @@ input[type="number"]:focus {
     border-color: var(--green);
 }
 
+input[type="number"].error {
+    border-color: #f44336;
+    animation: shake 0.5s;
+}
+
+.error-message {
+    color: #f44336;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: #ffebee;
+    border-radius: 4px;
+    border: 1px solid #ffcdd2;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
 button {
     width: 100%;
     padding: 0.8rem;
