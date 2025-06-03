@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Precificação</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora de Precificação</h1>
+        <div class="input-group">
+            <input type="number" id="factoryPrice" step="0.01" min="0" placeholder="Digite o preço de fábrica">
+        </div>
+        <div class="input-group">
+            <p>Frete: R$ <span class="highlight">16.00</span></p>
+        </div>
+        <div class="input-group">
+            <p>Lucro: R$ <span class="highlight">50.00</span></p>
+        </div>
+        <div class="input-group">
+            <p>Acréscimo: <span class="highlight">5%</span></p>
+        </div>
+        <button onclick="calculatePrice()">Calcular Preço</button>
+        <div class="result" id="result">
+            <p class="total-value">
+                <span>Valor Total: R$ <span id="pixPrice">0.00</span></span>
+                <button class="copy-button" onclick="copyTotal()" title="Copiar valor total">
+                    <i class="fas fa-copy"></i>
+                </button>
+            </p>
+            <p class="profit-percentage">Porcentagem de Lucro: <span id="profitPercentage">0.0%</span></p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html> 
