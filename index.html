@@ -20,13 +20,16 @@
             <p>Lucro: R$ <span class="highlight">50.00</span></p>
         </div>
         <div class="input-group">
-            <p>Acréscimo: <span class="highlight">5%</span></p>
+            <p>Taxa de Cartão: <span class="highlight">5%</span></p>
+        </div>
+        <div class="input-group">
+            <p>Taxa de Parcelamento: <span class="highlight">7%</span></p>
         </div>
         <button onclick="calculatePrice()">Calcular Preço</button>
         <div class="result" id="result">
             <p class="total-value">
-                <span>Valor Total: R$ <span id="pixPrice">0.00</span></span>
-                <button class="copy-button" onclick="copyTotal()" title="Copiar valor total">
+                <span>Cartão Parcelado: R$ <span id="installmentPrice">0.00</span></span>
+                <button class="copy-button" onclick="copyTotal('installmentPrice')" title="Copiar valor parcelado">
                     <i class="fas fa-copy"></i>
                 </button>
             </p>
